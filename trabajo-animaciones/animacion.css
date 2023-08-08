@@ -1,0 +1,426 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Handjet', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 10rem 2fr 1fr;
+    grid-template-rows: 11rem 2fr 1fr;
+    grid-template-areas: "titulo titulo titulo"
+    "menu catalogo catalogo"
+    "pie pie informacion";
+}
+
+
+.titulo{
+    border-radius: 8px;
+    grid-area: titulo;
+    font-size:4rem;
+   color: deeppink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(https://static.videezy.com/system/resources/thumbnails/000/051/342/original/Plexus-Space.jpg);
+background-position: center;
+    
+
+}
+
+#img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#h1{
+    border: 3px solid yellow;
+    font-size: 8rem;
+    border-radius: 8px;
+}
+
+
+
+.menu{
+    
+    gap: 10px;
+    grid-area: menu;
+    font-size: 25px;
+    background-color: rgb(36, 42, 37);
+    border-radius: 8px;
+    color: black;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+
+
+#sustratos{
+  color:black;
+  background-color:gainsboro;
+  width: 65%;
+  border-radius: 8px;
+  margin: 10px;
+  transition: width 5s ease-in-out;
+  cursor: pointer;
+}
+
+#sustratos:hover{
+    background-color: gray;
+    color: white;
+    width: 90%;
+}
+
+#semillas{
+    color:black;
+  width: 55%;
+    background-color:gainsboro;
+    border-radius: 8px;
+    margin: 20px;
+    transition: width 5s ease-in-out;
+    cursor: pointer;
+
+}
+
+#semillas:hover{
+    background-color: gray;
+    color:white;
+    width: 90%;
+   
+}
+
+#carpas{
+ 
+    background-color:gainsboro;
+    width: 55%;
+    border-radius: 8px;
+    margin: 10px;
+    transition: width 5s ease-in-out;
+    cursor: pointer;
+}
+#carpas:hover{
+    background-color: gray;
+    color:white;
+    width: 90%;
+
+}
+
+#kit{
+  
+    background-color: gainsboro;
+    border-radius: 8px;
+    margin: 10px;
+    transition: width 5s ease-in;
+    cursor: pointer;
+}
+#kit:hover{
+    background-color: gray;
+    color: white;
+    width: 90%;
+
+}
+#iluminacion{
+    
+    background-color:gainsboro;
+    border-radius: 8px;
+    margin: 10px;
+    transition: width 5s ease-in;
+    cursor: pointer;
+}
+#iluminacion:hover{
+    background-color: gray;
+    color: white;
+    width: 90%;
+
+
+}
+
+.btn-cotizar{
+    width: 50%;
+    height: 2rem;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4rem;
+    pointer-events: visibleFill;
+    -o-transition-property: background-color, width;
+    transition-duration: 2s ;
+}
+
+
+
+
+.catalogo{
+    grid-area: catalogo;
+    background-color: blueviolet;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr;
+  align-items: center;
+   justify-items: center;
+   overflow: auto;
+    border-radius: 8px;
+}
+.hamburguesa{
+    display: none;
+}
+
+.grid-item{
+    margin: 20px;
+   display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom:50px;
+    gap:20px;
+    
+}
+
+.recien{
+    font-size: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 40%;
+    height: 30px;
+    background-color: white;
+
+}
+
+
+
+ 
+  
+
+.card{
+    background-image: url(https://dojiw2m9tvv09.cloudfront.net/6605/product/hs0097-blue-dream-auto3421.jpg);
+   background-position: center;
+   background-size:cover;
+   background-repeat:no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    transition-property: background-image, width;
+    transition-duration: 2s ;
+    cursor: pointer;
+
+}
+.card:hover{
+    color: aliceblue;
+    width: 300px;
+    height: 400px;
+    font-size: 55px;
+    background-image: url(https://dojiw2m9tvv09.cloudfront.net/6605/product/hs0097-blue-dream-auto3421.jpg);
+   
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+transform: matrix3d();}
+
+.pie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    color: darkorchid;
+    background-image:url(https://humanidades.com/wp-content/uploads/2018/08/via-lactea-e1535495054860.jpg);
+  background-repeat:initial;
+  background-position: center;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 8px;
+  grid-area: pie;
+  animation-name: fanimado;
+  animation: fanimado 6s infinite;
+}
+
+
+
+@keyframes fanimado{
+0%{
+    background-position:0% 50%;
+}
+
+50%{
+    background-position:100% 50%
+}
+
+100%{
+    background-position:0% 50%;
+}
+
+}
+
+.informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    grid-area: informacion;
+    background-color: black;
+}
+
+#h5{
+    color: white;
+    font-size:2rem;
+    display: flex;
+    text-align: center;
+}
+.whatsapp{
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: 10px solid whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex   ;
+    
+    position: absolute;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-image: url(https://img.freepik.cm/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_138676-2130.jpg?w=740&t=st=1690955052~exp=1690955652~hmac=237e5b63fcc17a3d91b7b8e8c933e6ba1ec2c98d4d95c5b6c0eedfe2e76fbdd9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    @keyframes example {
+    from { left: 0px; }
+    to { left: 1px; }
+    
+
+    }
+    .con{
+        background-image: url(https://static.videezy.co/system/resources/thumbnails/000/051/342/original/Plexus-Space.jpg);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .text {
+            position: absolute;
+            font-size: 48px;
+            animation: move 4s ease infinite;
+            }
+            
+
+
+
+
+
+
+@media(max-width:576px){
+
+
+
+    *{
+    margin:0%;
+    padding: 0%;
+}
+    .container5{
+
+       
+        display: grid;
+        grid-template-areas:"titulo"
+        "menu"
+        "catalogo"
+        "pie"
+        "informacion";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10rem 10rem 1fr 9rem 9rem ;
+        gap: 10px;
+        margin-right: 0;
+
+    }
+
+    .menu{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hamburguesa{
+        display: flex;
+
+
+    }
+    
+
+    .sub-menu{
+        display: none;
+       
+    }
+
+    
+    
+    .titulo{
+        font-size: 10px;
+        display: flex;
+       
+      
+    }
+
+    #h1{
+        font-size: 30px;
+    }
+
+    .catalogo{
+        overflow-y: scroll;
+        gap: 15px;
+    }
+    
+    .card{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .grid-item{
+     
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      
+    }
+
+    .pie{
+        grid-area: pie;
+
+    }
+
+    .informacion{
+        grid-area: informacion;
+    }
+
+   }
